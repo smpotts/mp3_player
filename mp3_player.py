@@ -16,32 +16,54 @@ playlist = tkr.Listbox(music_player, font=font, highlightbackground="black", sel
 
 
 def build_song_list():
+    """
+    Creates a list of songs and inserts them into the playlist for the mp3 player to plyy.
+    """
     for item in song_list:
         position = 0
+        # add the song to the playlist in the order it encountered it
         playlist.insert(position, item)
         position += 1
 
 
 def play():
-    # active is active state, aka file selected
+    """
+    Plays the song that is next in the queue.
+    """
+    # 'ACTIVE' is active state, aka file selected
     pygame.mixer.music.load(playlist.get(tkr.ACTIVE))
     string_var.set(playlist.get(tkr.ACTIVE))
     pygame.mixer.music.play()
 
 
 def exit_music_player():
+    """
+    Stops playing the song.
+    :return:
+    """
     pygame.mixer.music.stop()
 
 
 def pause():
+    """
+    Pauses the song that is currently playing.
+    :return:
+    """
     pygame.mixer.music.pause()
 
 
 def unpause():
+    """
+    Unpauses the song that has been paused.
+    :return:
+    """
     pygame.mixer.music.unpause()
 
 
 def build_widgets():
+    """
+    Builds the buttons and display for the MP3 player and sets them up appropriately on the screen.
+    """
     play_button = tkr.Button(music_player, width=5, height=3, font=font, text="Play", command=play,
                              highlightbackground="red",
                              fg="white")
