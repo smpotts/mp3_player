@@ -5,7 +5,7 @@ import pygame
 
 def main():
     music_player = tkr.Tk()
-    music_player.title("Homegrown MP3 Player")
+    music_player.title("Homemade MP3 Player")
     music_player.geometry("500x500")
 
     string_var = tkr.StringVar()

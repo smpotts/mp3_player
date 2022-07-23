@@ -1,5 +1,5 @@
 # Homemade MP3 Player
-A homemade mp3 player written in Python using tkinter and the pygame tools that interacts with a playlist of mp3 files.
+This is a homemade mp3 player that plays a list of songs I covered on my guitar. The project is written in Python using tkinter and the pygame tools.
 
 ## Technologies
 This project uses Python v. 3.9.6 and uses tkinter and pygame to build the widgets and provide actions to the widget 
@@ -15,6 +15,13 @@ will display the following buttons:
 Press play or click in the black space under the buttons to display the list of songs. You can select a song in the list and play it 
 by clicking the button. Once the song is playing, you can stop it entirely or pause the song. To resume playing the song, 
 click 'Unpause'.
+
+### Cover Songs
+These are the songs I'm covering in the audio files:
+- I'm Alive by Nora Jones
+- Nothing Gets Me High by Bad Bad Hats
+- Steal My Kisses by Ben Harper and the Innocent Criminals
+- Tequila Does by Miranda Lambert
 
 ## Future Enhancements
 Given more time to work on this, here are some things I would do to enhance the program.
